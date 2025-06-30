@@ -115,7 +115,13 @@ export const HomePage: React.FC = () => {
               <span className="text-blue-600 font-semibold">Trusted by 50,000+ users worldwide</span>
               <CheckCircle className="h-5 w-5 text-green-500" />
             </motion.div>
-
+        <img
+  src=
+      "/bolt-badge.png"
+  alt="Built with Bolt"
+  className="h-20 w-20 object-contain hover:scale-105 transition-transform duration-300"
+/>
+    
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -162,13 +168,7 @@ export const HomePage: React.FC = () => {
               </Link>
             </motion.div>
 
-            <img
-  src="/bolt-badge.png"
-  alt="Built with Bolt"
-  className="h-20 w-20 object-contain hover:scale-105 transition-transform duration-300"
-/>
-
-            {/* Feature highlights */}
+      {/* Feature highlights */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
