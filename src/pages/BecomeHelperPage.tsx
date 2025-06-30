@@ -117,7 +117,7 @@ export const BecomeHelperPage: React.FC = () => {
               <CheckCircle className="h-5 w-5 text-green-500" />
             </div>
 
-            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl font-bold  mb-8 font-poppins leading-tight">
+            <h1 className="gradient-text text-4xl sm:text-5xl lg:text-6xl font-bold  mb-8 font-poppins leading-tight">
               Become a{' '}
               <span className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 font-poppins leading-tight">Trusted Helper</span>
               <br />
