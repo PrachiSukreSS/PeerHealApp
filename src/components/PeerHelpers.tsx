@@ -288,7 +288,7 @@ export const PeerHelpers: React.FC<PeerHelpersProps> = ({ onStartChat, selectedC
                     <div className="grid grid-cols-2 gap-3">
                       <button
                         onClick={() => onStartChat(helper)}
-                        className="bg-emerald-500/80 backdrop-blur-md border border-emerald-300/50 text-white px-4 py-3 rounded-xl hover:shadow-lg hover:bg-emerald-600/80 transition-all duration-300 flex items-center justify-center space-x-2 font-semibold transform hover:scale-105"
+                        className="bg-cyan-500/80 backdrop-blur-md border border-cyan-300/50 text-white px-4 py-3 rounded-xl hover:shadow-lg hover:bg-cyan-600/80 transition-all duration-300 flex items-center justify-center space-x-2 font-semibold transform hover:scale-105"
                       >
                         <MessageCircle className="h-4 w-4" />
                         <span>Chat</span>
@@ -304,7 +304,7 @@ export const PeerHelpers: React.FC<PeerHelpersProps> = ({ onStartChat, selectedC
                       
                       <button
                         onClick={() => handleElevenLabsVoice(helper)}
-                        className="bg-orange-500/80 backdrop-blur-md border border-orange-300/50 text-white px-4 py-3 rounded-xl hover:shadow-lg hover:bg-orange-600/80 transition-all duration-300 flex items-center justify-center space-x-2 font-semibold transform hover:scale-105"
+                        className="bg-violet-500/80 backdrop-blur-md border border-violet-300/50 text-white px-4 py-3 rounded-xl hover:shadow-lg hover:bg-violet-600/80 transition-all duration-300 flex items-center justify-center space-x-2 font-semibold transform hover:scale-105"
                       >
                         <Mic className="h-4 w-4" />
                         <span>Voice AI</span>
