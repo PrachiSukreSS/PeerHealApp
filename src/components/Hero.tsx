@@ -122,7 +122,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetStarted }) => {
             </button>
           </motion.div>
  <img
-  src="bolt-badge.png"
+  src="/bolt-badge.png"
   alt="Built with Bolt"
   className="h-20 w-20 object-contain hover:scale-105 transition-transform duration-300"
 />
