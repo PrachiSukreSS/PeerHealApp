@@ -140,10 +140,7 @@ export const BecomeHelperPage: React.FC = () => {
                 <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </motion.button>
               
-              <button className="inline-flex items-center px-10 py-5 border-3 border-violet-600 text-purple-600 hover:bg-purple-50 font-bold text-lg rounded-2xl transition-all duration-300 transform hover:scale-105">
-                Learn More
-                <Users className="ml-3 h-6 w-6" />
-              </button>
+           
             </div>
 
             {/* Stats */}
