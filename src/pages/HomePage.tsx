@@ -125,12 +125,6 @@ export const HomePage: React.FC = () => {
               Find{' '}
               <span className="gradient-text relative">
                 Trusted Support
-                <motion.div 
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 1 }}
-                  className="absolute bottom-2 left-0 right-0 h-3 bg-gradient-to-r from-blue-400/30 to-indigo-400/30 -z-10"
-                ></motion.div>
               </span>
               <br />
               When You Need It Most
