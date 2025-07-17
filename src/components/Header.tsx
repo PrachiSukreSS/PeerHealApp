@@ -40,7 +40,6 @@ export const Header: React.FC = () => {
     { path: '/categories', label: 'Categories' },
     { path: '/helpers', label: 'Find Helpers' },
     { path: '/ai-support', label: 'AI Support' },
-    { path: '/elevenlabs-demo', label: 'Voice AI Demo' },
     { path: '/pricing', label: 'Pricing' },
     { path: '/become-helper', label: 'Become Helper' },
   ];

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, X, Bot, User, Heart, Lightbulb, Shield, Mic, MicOff, Volume2, VolumeX, BookOpen, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Helper } from '../types';
 import { getAIKnowledge, searchAIKnowledge, searchEmergencyContacts } from '../lib/database';
 
@@ -446,6 +447,18 @@ export const EnhancedAIAssistant: React.FC<EnhancedAIAssistantProps> = ({ onClos
               <Bot className="h-3 w-3" />
               <span>Advanced AI support</span>
             </div>
+          </div>
+          
+          {/* Voice AI Demo Button */}
+          <div className="mt-6 text-center">
+            <Link
+              to="/elevenlabs-demo"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <Volume2 className="h-5 w-5" />
+              <span>Try Voice AI Demo</span>
+            </Link>
+            <p className="text-xs text-gray-500 mt-2">Experience natural AI voice conversations</p>
           </div>
         </div>
       </motion.div>
