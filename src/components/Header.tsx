@@ -31,12 +31,21 @@ export const Header: React.FC = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/categories', label: 'Categories' },
-  
+    { path: '/helpers', label: 'Find Helpers' },
+    { path: '/ai-support', label: 'AI Support' }
+  ];
+
+  const authenticatedNavItems = [
+    { path: '/', label: 'Home' },
+    { path: '/categories', label: 'Categories' },
+    { path: '/helpers', label: 'Find Helpers' },
     { path: '/ai-support', label: 'AI Support' },
     { path: '/elevenlabs-demo', label: 'Voice AI Demo' },
     { path: '/pricing', label: 'Pricing' },
     { path: '/become-helper', label: 'Become Helper' },
   ];
+
+  const currentNavItems = user ? authenticatedNavItems : navItems;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -59,7 +68,7 @@ export const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-2">
-            {navItems.map(({ path, label }) => (
+            {currentNavItems.map(({ path, label }) => (
               <Link
                 key={path}
                 to={path}
@@ -193,7 +202,7 @@ export const Header: React.FC = () => {
               className="lg:hidden py-4 border-t border-blue-100"
             >
               <nav className="flex flex-col space-y-2">
-                {navItems.map(({ path, label }) => (
+                {currentNavItems.map(({ path, label }) => (
                   <Link
                     key={path}
                     to={path}
@@ -256,14 +265,6 @@ export const Header: React.FC = () => {
                       >
                         Get Started
                       </button>
-                      
-                      <div className="flex justify-center pt-4 border-t border-blue-100">
-                        <img
-                          src="/bolt-badge.png"
-                          alt="Built with Bolt"
-                          className="h-6 w-6 object-contain opacity-60"
-                        />
-                      </div>
                     </>
                   )}
                 </div>
